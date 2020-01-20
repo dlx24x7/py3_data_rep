@@ -5,19 +5,19 @@ Slicing strings.
 word = "everything"
 
 # Selecting substrings
-print(word[1:5])
-print(word[5:9])
+print("line 1:", word[1:5])
+print("line 2:", word[5:9])
 
 # Open ended slices
-print(word[5:])
-print(word[:4])
+print("line 3:", word[5:])
+print("line 4:", word[:4])
 
 # Using negative indices
-print(word[-3:])
-print(word[2:-3])
+print("line 5:", word[-3:])
+print("line 6:", word[2:-3])
 
 # Indexing past the end
-print(word[8:20])
+print("line 7:", word[8:20])
 print("$" + word[22:29] + "^")
 
 # Empty slices
