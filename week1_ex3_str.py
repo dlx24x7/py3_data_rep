@@ -38,3 +38,11 @@ print("Number of apples:", sentence.count("apple"))
 print("")
 print(sentence.startswith("When"))
 print(sentence.endswith("The end."))
+
+
+
+# Output
+
+#Warren Joe
+#Rixner Scott
+#Greiner John

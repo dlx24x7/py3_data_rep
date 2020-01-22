@@ -108,3 +108,95 @@ print(is_substring(example_string, "It's"))
 #False
 #False
 #True
+
+print("Example 7")
+
+def make_nametag(first_name, topic):
+    """
+    Given two strings first_name and topic,
+    return a string of the form ""Hi! My name 
+    is XXX. This lecture covers YYY." where
+    XXX and YYY are first_name and topic.
+    """
+    
+    name = first_name
+    area = topic
+    sentence = "Hi! My is {0}.  This lecture covers {1}.".format(name,area)
+    return sentence
+   
+
+    
+# Tests
+
+print(make_nametag("Scott", "Python"))
+print(make_nametag("Joe", "games"))
+print(make_nametag("John", "programming tips"))
+
+
+# Output
+
+#Hi! My name is Scott. This lecture covers Python.
+#Hi! My name is Joe. This lecture covers games.
+#Hi! My name is John. This lecture covers programming tips.
+
+print("Example 8")
+def make_int(int_string):
+    """
+    Given the string int_string, return the associated integer if all 
+    digits are decimal digits.  Other return -1.
+    """
+    
+    # enter code here
+    if (int_string.isdigit()): 
+        number = int(int_string)
+    else: 
+        number = -1
+    return number 
+    
+# Tests
+
+print(make_int("123"))
+print(make_int("00123"))
+print(make_int("1.23"))
+print(make_int("-123"))
+
+
+# Output
+
+#123
+#123
+#-1
+#-1
+
+print("Exercise 9")
+def name_swap(name_string):
+    """
+    Given the string name string of the form "first last", return 
+    the string "Last First" where both names are now capitalized
+    """
+    
+    # Enter code here
+    length = len(name_string)
+    #print(length)
+    first_space = name_string.find(" ") 
+    first_name = name_string[:first_space]
+    cap_first = first_name.capitalize()
+    #print(cap_first)
+    last_name = name_string[first_space+1:]
+    cap_last = last_name.capitalize()
+    #print(cap_last) 
+    name_tag = cap_last + " " + cap_first
+    return name_tag
+    
+# Tests
+
+print(name_swap("joe warren"))
+print(name_swap("scott rixner"))
+print(name_swap("john greiner"))
+
+
+# Output
+
+#Warren Joe
+#Rixner Scott
+#Greiner John
