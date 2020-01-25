@@ -162,3 +162,27 @@ print(list_max([1, 2, 3, 4, 5]))
 #5
 
 # Example 10
+def concatenate_ints(int_list):
+    """
+    Given a list of integers int_list, return the integer formed by
+    concatenating their decimal digits together
+    """
+    item_cat = ""
+    for item in int_list:
+        #print("item", item)
+        item_string = str(item)
+        item_cat = item_cat + item_string
+    return item_cat
+
+# Tests
+print(concatenate_ints([4]))
+print(concatenate_ints([4, 0, 4]))
+print(concatenate_ints([123, 456, 789]))
+print(concatenate_ints([32, 796, 1000]))
+
+
+# Output
+#4
+#404
+#123456789
+#327961000
