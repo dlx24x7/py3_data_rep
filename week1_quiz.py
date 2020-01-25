@@ -18,14 +18,19 @@ print("Sir Robin"[1:3], "num 4")
 string1 = "A"
 string2 = "AB"
 string3 = "CD"
-print (string1 in string2)
-print (4*string1)
-print (string1 + string2)
+print ("string in string", string1 in string2)
+print ("string * 4", 4*string1)
+print ("string + string", string1 + string2)
 #print (string2 - string1)
 
-print(string2.index(string1))
-#print(string3.index(string1))
+print(string2.index(string1), "index command success")
+#print(string3.index(string1), "index command fail")
+#print(string2.find(string1), "find command success")
+#print(string3.find(string1), "find command fail")
 
+print("{1}{2}{1}".format("abra", "cad", "abra"))
+#print("{2}{1}{0}".format("abra", "cad"))
+print("{0}{1}{0}".format("abra", "cad", "abra"))
 print("{0}{1}{2}".format("abra", "cad", "abra"))
 
 def count_vowels(word): 
@@ -44,7 +49,7 @@ def count_vowels(word):
     print("Number of u is", num_u)
     return num_a + num_e + num_i + num_o + num_u
 
-#print(count_vowels("aaassseefffgggiiijjjoOOkkkuuuu"))
+print(count_vowels("aaassseefffgggiiijjjoOOkkkuuuu"))
 print(count_vowels("aovvouOucvicIIOveeOIclOeuvvauouuvciOIsle"))
 
 def demystify(l1_string):
